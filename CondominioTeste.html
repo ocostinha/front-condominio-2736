@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Condominio Teste</title>
+    <script src="CondominioTeste.js" type="application/javascript"></script>
+</head>
+<body onload="carregarCondominos()">
+
+    <div id="CadastroCondomino">
+        <label>
+            Nome:
+            <input type="text" id="nome">
+        </label>
+
+        <br>
+
+        <label>
+            DDD:
+            <input type="text" id="ddd">
+        </label>
+
+        <br>
+
+        <label>
+            Telefone:
+            <input type="text" id="telefone">
+        </label>
+
+        <br>
+
+        <label>
+            E-mail:
+            <input type="text" id="email">
+        </label>
+
+        <br>
+
+        <label>
+            Bloco:
+            <input type="text" id="bloco">
+        </label>
+
+        <br>
+
+        <label>
+            Apto:
+            <input type="text" id="apto">
+        </label>
+
+        <br>
+
+        <label>
+            CPF:
+            <input type="text" id="cpf">
+        </label>
+
+        <br>
+
+        <button onclick="limpar()">Limpar</button>
+        <button onclick="cancelar()">Cancelar</button>
+        <button onclick="salvar()">Salvar</button>
+    </div>
+
+    <div id="ConsultarCondominos">
+        <table id="tableCondominos"></table>
+    </div>
+
+    <div id="botoes">
+        <button onclick="novoCondomino()" id="novoCondomino">Novo Condomino</button>
+    </div>
+</body>
+</html>
