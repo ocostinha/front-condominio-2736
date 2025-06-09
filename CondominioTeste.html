@@ -6,8 +6,8 @@
     <script src="CondominioTeste.js" type="application/javascript"></script>
 </head>
 <body onload="carregarCondominos()">
-
     <div id="CadastroCondomino">
+        <input type="text" id="id" style="display: none">
         <label>
             Nome:
             <input type="text" id="nome">
@@ -57,9 +57,10 @@
 
         <br>
 
-        <button onclick="limpar()">Limpar</button>
-        <button onclick="cancelar()">Cancelar</button>
-        <button onclick="salvar()">Salvar</button>
+        <button onclick="limpar()" id="limpar">Limpar</button>
+        <button onclick="cancelar()" id="cancelar">Cancelar</button>
+        <button onclick="salvar()" id="salvar">Salvar</button>
+        <button onclick="atualizar()" id="atualizar">Salvar</button>
     </div>
 
     <div id="ConsultarCondominos">
